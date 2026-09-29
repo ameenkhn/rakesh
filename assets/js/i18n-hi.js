@@ -442,5 +442,14 @@ window.BSG_I18N_HI = {
   "Direct phone access and two consultation windows make the brand easier for families to approach.": "सीधे फोन पर संपर्क और परामर्श के दो समय परिवारों के लिए हॉस्पिटल तक पहुंचना आसान बनाते हैं।",
   "Recovery mindset": "रिकवरी पर ध्यान",
   "Function and rehabilitation remain central, which matters deeply in orthopedic care.": "काम-काज लौटाना और रिहैबिलिटेशन हमेशा केंद्र में रहते हैं, जो हड्डी रोग इलाज में बहुत मायने रखता है।",
-  "A trust-focused presentation built around authentic images, clear service language and clinically grounded positioning.": "असली तस्वीरों, सेवाओं की साफ़ भाषा और चिकित्सा पर आधारित जानकारी के साथ भरोसे पर केंद्रित प्रस्तुति।"
+  "A trust-focused presentation built around authentic images, clear service language and clinically grounded positioning.": "असली तस्वीरों, सेवाओं की साफ़ भाषा और चिकित्सा पर आधारित जानकारी के साथ भरोसे पर केंद्रित प्रस्तुति।",
+  "Open 24×7": "24×7 खुला",
+  "Close": "बंद करें",
+  "How can we help you?": "हम आपकी क्या मदद कर सकते हैं?",
+  "Call BSG Hospital any time, day or night.": "दिन हो या रात, कभी भी BSG हॉस्पिटल को कॉल करें।",
+  "For Appointment": "अपॉइंटमेंट के लिए",
+  "Book a consultation with Dr. Rakesh B. Singh": "डॉ. राकेश बी. सिंह से परामर्श बुक करें",
+  "For Any Enquiry": "किसी भी जानकारी के लिए",
+  "Treatment, reports, directions or emergencies": "इलाज, रिपोर्ट, रास्ता या इमरजेंसी",
+  "Continue to website": "वेबसाइट देखें"
 };

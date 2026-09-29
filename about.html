@@ -264,5 +264,37 @@
       <p class="footer-note">© <span data-year></span> BSG Hospital. All rights reserved.</p>
     </div>
   </footer>
+  <dialog class="welcome-popup" aria-labelledby="welcomePopupTitle" data-welcome-popup>
+    <div class="welcome-popup-panel">
+      <div class="welcome-popup-top">
+        <span class="welcome-popup-badge"><i class="fa-solid fa-clock"></i>Open 24×7</span>
+        <div class="lang-switch" role="group" aria-label="Language">
+          <button type="button" data-lang="en" aria-pressed="true"><span class="lang-full">English</span><span class="lang-short">EN</span></button>
+          <button type="button" data-lang="hi" aria-pressed="false" lang="hi"><span class="lang-full">हिंदी</span><span class="lang-short">हिं</span></button>
+        </div>
+        <button class="welcome-popup-close" type="button" aria-label="Close" data-welcome-close autofocus><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <h2 class="welcome-popup-title" id="welcomePopupTitle">How can we help you?</h2>
+      <p class="welcome-popup-copy">Call BSG Hospital any time, day or night.</p>
+      <a class="welcome-popup-number" href="tel:+919889885077">
+        <i class="fa-solid fa-phone-volume"></i>
+        <span class="welcome-popup-digits">9889885077</span>
+        <span class="welcome-popup-hours">24×7</span>
+      </a>
+      <div class="welcome-popup-options">
+        <a class="welcome-popup-option" href="tel:+919889885077">
+          <i class="fa-solid fa-calendar-check"></i>
+          <strong>For Appointment</strong>
+          <span>Book a consultation with Dr. Rakesh B. Singh</span>
+        </a>
+        <a class="welcome-popup-option" href="tel:+919889885077">
+          <i class="fa-solid fa-headset"></i>
+          <strong>For Any Enquiry</strong>
+          <span>Treatment, reports, directions or emergencies</span>
+        </a>
+      </div>
+      <button class="welcome-popup-skip" type="button" data-welcome-close>Continue to website</button>
+    </div>
+  </dialog>
 </body>
 </html>
