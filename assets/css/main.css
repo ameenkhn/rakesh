@@ -1050,6 +1050,46 @@ ul {
   color: var(--accent-deep);
 }
 
+.map-card {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.map-frame {
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line);
+  aspect-ratio: 16 / 10;
+  background: var(--surface-soft);
+}
+
+.map-frame iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.map-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.btn-whatsapp {
+  color: #fff;
+  background: linear-gradient(135deg, #1faa53, #25d366);
+  box-shadow: 0 14px 26px rgba(37, 211, 102, 0.22);
+}
+
+@media (max-width: 640px) {
+  .map-actions .btn {
+    flex: 1 1 100%;
+  }
+}
+
 .cta-band {
   padding: 34px;
   border-radius: 34px;
