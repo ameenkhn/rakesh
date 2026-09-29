@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap");
 
 :root {
   --bg: #f4fbff;
@@ -34,7 +34,7 @@ html {
 
 body {
   margin: 0;
-  font-family: "Manrope", sans-serif;
+  font-family: "Manrope", "Noto Sans Devanagari", sans-serif;
   color: var(--ink);
   background:
     radial-gradient(circle at top left, rgba(99, 207, 208, 0.18), transparent 32%),
@@ -122,7 +122,7 @@ ul {
 }
 
 .site-preloader-label {
-  font-family: "Sora", sans-serif;
+  font-family: "Sora", "Noto Sans Devanagari", sans-serif;
   font-size: 0.92rem;
   font-weight: 700;
   letter-spacing: 0.28em;
@@ -215,7 +215,7 @@ ul {
 }
 
 .brand-copy strong {
-  font-family: "Sora", sans-serif;
+  font-family: "Sora", "Noto Sans Devanagari", sans-serif;
   font-size: 1rem;
   font-weight: 800;
   letter-spacing: -0.03em;
@@ -399,7 +399,7 @@ ul {
 .page-title,
 .section-title,
 .cta-title {
-  font-family: "Sora", sans-serif;
+  font-family: "Sora", "Noto Sans Devanagari", sans-serif;
   letter-spacing: -0.05em;
   color: var(--ink-strong);
 }
@@ -417,7 +417,7 @@ ul {
   line-height: 1.45;
   letter-spacing: -0.02em;
   color: var(--muted);
-  font-family: "Manrope", sans-serif;
+  font-family: "Manrope", "Noto Sans Devanagari", sans-serif;
   font-weight: 700;
 }
 
@@ -532,7 +532,7 @@ ul {
 .metric-card strong {
   display: block;
   font-size: 1.95rem;
-  font-family: "Sora", sans-serif;
+  font-family: "Sora", "Noto Sans Devanagari", sans-serif;
   line-height: 1;
 }
 
@@ -618,7 +618,7 @@ ul {
 .visual-card strong {
   display: block;
   font-size: 1.1rem;
-  font-family: "Sora", sans-serif;
+  font-family: "Sora", "Noto Sans Devanagari", sans-serif;
 }
 
 .floating-card span,
@@ -718,7 +718,7 @@ ul {
 .location-card h3,
 .faq-question,
 .timeline-item h3 {
-  font-family: "Sora", sans-serif;
+  font-family: "Sora", "Noto Sans Devanagari", sans-serif;
   font-size: 1.18rem;
   line-height: 1.35;
   letter-spacing: -0.03em;
@@ -892,7 +892,7 @@ ul {
   background: linear-gradient(135deg, rgba(99, 207, 208, 0.22), rgba(12, 43, 92, 0.12));
   border: 1px solid rgba(12, 43, 92, 0.1);
   color: var(--accent-deep);
-  font-family: "Sora", sans-serif;
+  font-family: "Sora", "Noto Sans Devanagari", sans-serif;
   font-weight: 800;
 }
 
@@ -958,7 +958,7 @@ ul {
 
 .gallery-caption strong {
   display: block;
-  font-family: "Sora", sans-serif;
+  font-family: "Sora", "Noto Sans Devanagari", sans-serif;
   font-size: 1rem;
 }
 
@@ -1158,7 +1158,7 @@ ul {
 .footer-mini-cta-title {
   margin: 0;
   color: #fff;
-  font-family: "Sora", sans-serif;
+  font-family: "Sora", "Noto Sans Devanagari", sans-serif;
   font-size: 1.05rem;
   line-height: 1.1;
 }
@@ -1180,7 +1180,7 @@ ul {
   border-radius: 999px;
   background: linear-gradient(135deg, #1a7d87, #34c9c7);
   color: #041a2f;
-  font-family: "Sora", sans-serif;
+  font-family: "Sora", "Noto Sans Devanagari", sans-serif;
   font-size: 0.94rem;
   font-weight: 700;
   text-align: center;
@@ -1440,5 +1440,70 @@ ul {
   .location-card,
   .timeline-item {
     padding: 20px;
+  }
+}
+
+/* Language switch (English | हिंदी) */
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  flex-shrink: 0;
+  padding: 4px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid var(--line);
+}
+
+.lang-switch button {
+  min-height: 36px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: 999px;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.88rem;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.lang-switch button[aria-pressed="true"] {
+  color: #fff;
+  background: linear-gradient(135deg, var(--ink), var(--accent-deep));
+}
+
+.lang-switch .lang-short {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .lang-switch {
+    order: 2;
+    margin-left: auto;
+  }
+
+  .nav-toggle {
+    order: 3;
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-wrap {
+    gap: 12px;
+  }
+
+  .lang-switch button {
+    min-height: 32px;
+    padding: 0 10px;
+  }
+
+  .lang-switch .lang-full {
+    display: none;
+  }
+
+  .lang-switch .lang-short {
+    display: inline;
   }
 }
