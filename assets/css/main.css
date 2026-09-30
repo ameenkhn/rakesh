@@ -1709,3 +1709,180 @@ ul {
     grid-template-columns: 1fr;
   }
 }
+
+/* Specialists (doctor team) */
+.specialist-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px 64px;
+  margin-top: 44px;
+}
+
+.specialist-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  width: 260px;
+  text-align: center;
+}
+
+.specialist-photo {
+  width: 188px;
+  height: 188px;
+  margin-bottom: 14px;
+  padding: 8px;
+  border-radius: 50%;
+  border: 2px dashed rgba(23, 128, 127, 0.5);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.specialist-photo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center 18%;
+  background: var(--surface-soft);
+}
+
+.specialist-card:hover .specialist-photo {
+  border-color: var(--accent-strong);
+  transform: translateY(-4px);
+}
+
+.specialist-name {
+  margin: 0;
+  font-family: "Sora", "Noto Sans Devanagari", sans-serif;
+  font-size: 1.12rem;
+  color: var(--ink-strong);
+}
+
+.specialist-role {
+  color: #17807f;
+  font-size: 0.92rem;
+  font-weight: 800;
+  line-height: 1.45;
+}
+
+.specialist-meta {
+  color: var(--muted);
+  font-size: 0.86rem;
+  line-height: 1.55;
+}
+
+.specialist-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+  color: var(--accent-deep);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
+.specialist-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.title-accent {
+  background: linear-gradient(90deg, var(--accent-deep), #17807f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* OPD timings */
+.opd-card-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.opd-card-head i {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  background: rgba(39, 180, 182, 0.14);
+  color: var(--accent-deep);
+  font-size: 1.1rem;
+}
+
+.opd-card-head h3 {
+  margin: 0;
+}
+
+.opd-card-head span {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.opd-list {
+  display: grid;
+  margin: 18px 0 20px;
+  padding: 0;
+}
+
+.opd-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 13px 0;
+  border-bottom: 1px dashed var(--line);
+}
+
+.opd-list li:last-child {
+  border-bottom: 0;
+}
+
+.opd-list span {
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.opd-list strong {
+  color: var(--ink-strong);
+  font-size: 1rem;
+  text-align: right;
+}
+
+.opd-list .is-free strong {
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: rgba(23, 128, 127, 0.12);
+  color: #17807f;
+}
+
+.opd-list .is-closed strong {
+  color: #c2412a;
+}
+
+.opd-list .is-emergency strong {
+  padding: 3px 12px;
+  border-radius: 999px;
+  background: var(--signal);
+  color: #fff;
+}
+
+.opd-card .btn {
+  width: 100%;
+}
+
+.welcome-popup-alt {
+  margin: -4px 0 0;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+.welcome-popup-alt a {
+  color: var(--accent-deep);
+  font-weight: 800;
+}
